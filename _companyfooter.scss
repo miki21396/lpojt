@@ -1,1 +1,42 @@
 // ミキ
+
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.company {
+
+    display: flex;
+    justify-content: center;
+    font-family: 'ABeeZee';
+    margin-top: 30px;
+    margin-bottom: 70px;
+    justify-content: space-evenly;
+
+    .company-title {
+        font-size: 48px;
+    }
+
+    .details {
+        font-size: 25px;
+    }
+
+    .company-info {
+        font-size: 20px;
+    }
+
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    height: 61.54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

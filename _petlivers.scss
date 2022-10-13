@@ -3,8 +3,15 @@
 
 .petlivers {
 
-    background-color: rgb(75, 130, 219);
-    // position: absolute;
+    background-color: black;
+    // display: flex;
+
+    img {
+        // width: 0.3264%;
+        // height: 0.4858%;
+        max-width: 100%;
+        max-height: auto;
+    }
 
     .title {
         justify-content: center;
@@ -12,6 +19,16 @@
         font-size: 25px;
     }
 
+    .livers-minioya {
+
+        // width: 0.2%;
+        height: auto;
+        background-color: lightblue;
+    }
+
+    .liver {
+        font-size: 10px;
+    }
 
 
 }

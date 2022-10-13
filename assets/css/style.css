@@ -1,8 +1,21 @@
 .petlivers {
-  background-color: rgb(75, 130, 219);
+  background-color: black;
+  position: relative;
+}
+.petlivers img {
+  position: absolute;
 }
 .petlivers .title {
   justify-content: center;
   text-align: center;
   font-size: 25px;
+}
+.petlivers .livers-minioya {
+  width: 0.2%;
+  height: 300px;
+  background-color: white;
+  position: absolute;
+}
+.petlivers .liver {
+  font-size: 10px;
 }/*# sourceMappingURL=style.css.map */

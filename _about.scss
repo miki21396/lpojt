@@ -1,2 +1,57 @@
 // ミキ
 
+.about {
+
+    max-width: 1170px;
+    width: 79%;
+    margin: 0 auto;
+
+    .about-main-img {
+        width: 250px;
+    }
+
+    .about-title1 {
+        font-size: 25px;
+        margin: 30px;
+    }
+
+    .about-explain {
+        font-size: 20px;
+        margin: 30px;
+        width: 600px;
+    }
+
+
+    .about1,
+    .about2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-img {
+        position: relative;
+        width: 270px;
+        height: 370px;
+    }
+
+    .about-shadow1,
+    .about-shadow2 {
+        width: 250px;
+        height: 360px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .about-shadow1 {
+        background-color: #F9C83B;
+        right: 0px;
+        top: 0px;
+    }
+
+    .about-shadow2 {
+        background-color: #FFF835;
+        left: -10px;
+        top: 0px;
+    }
+
+}
