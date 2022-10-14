@@ -1,57 +1,114 @@
 // ミキ
 
+.title {
+    margin-top: 30px;
+}
+
 .about {
 
     max-width: 1170px;
     width: 79%;
     margin: 0 auto;
 
-    .about-main-img {
-        width: 250px;
-    }
+    // .about-main-img {
+    //     width: 43%;
+    //     height: auto;
+    //     }
 
     .about-title1 {
         font-size: 25px;
         margin: 30px;
     }
 
+    .about-texts {
+        width: 67%;
+        align-items: center;
+    }
+
     .about-explain {
-        font-size: 20px;
+        font-size: 18px;
         margin: 30px;
-        width: 600px;
+        // width: 67%;
     }
 
 
     .about1,
     .about2 {
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
 
     .about-img {
         position: relative;
-        width: 270px;
-        height: 370px;
+        width: 43%;
+        height: auto;
     }
 
-    .about-shadow1,
-    .about-shadow2 {
-        width: 250px;
-        height: 360px;
-        position: absolute;
-        z-index: -1;
+    .about1 {
+        .about-main-img {
+            box-shadow: 13px 9px 0px 0px #F9C83B;
+        }
     }
 
-    .about-shadow1 {
-        background-color: #F9C83B;
-        right: 0px;
-        top: 0px;
+    .about2 {
+        .about-main-img {
+            box-shadow: -13px 9px 0px 0px #FFF835;
+        }
     }
 
-    .about-shadow2 {
-        background-color: #FFF835;
-        left: -10px;
-        top: 0px;
+    .about-decoimg {
+        position: relative;
+
+        .one,
+        .two,
+        .three,
+        .four,
+        .five,
+        .six {
+            position: absolute;
+        }
+
+        .one {
+            width: 15%;
+            left: -13.3%;
+            top: 130px;
+
+        }
+
+        .two {
+            width: 10%;
+            right: -12%;
+            top: 20px;
+        }
+
+        .three {
+            width: 12.5%;
+            left: -13.5%;
+            top: 450px;
+        }
+
+        .four {
+            width: 22.5%;
+            right: -13.5%;
+            top: 330px;
+            z-index: 1;
+            // 途中
+        }
+
+        .five {
+            width: 16.5%;
+            left: -13.3%;
+            top: 760px;
+            z-index: 1;
+        }
+
+        .six {
+            width: 7%;
+            right: -3%;
+            top: 960px;
+        }
+
     }
+
 
 }
