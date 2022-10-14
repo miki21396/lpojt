@@ -4,31 +4,86 @@
 .petlivers {
 
     background-color: black;
-    // display: flex;
+
+
+.petlivers2{
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 1170px;
+    width: 79%;
+    margin: 0 auto;
+}
+    ::after .wrap{
+        white-space: pre;
+    }
 
     img {
-        // width: 0.3264%;
+        // width: 32.64%;
         // height: 0.4858%;
-        max-width: 100%;
-        max-height: auto;
+        // max-width: 100%;
+        // max-height: auto;
     }
 
     .title {
         justify-content: center;
         text-align: center;
         font-size: 25px;
+        margin-top: 30px;
     }
 
     .livers-minioya {
 
-        // width: 0.2%;
-        height: auto;
-        background-color: lightblue;
+        width: 23%;
+        background-color: white;
+
+        padding: 1.5em 1em;
+        margin: 2em 5px;
+        // border: solid 3px #000000;
+        
     }
 
     .liver {
         font-size: 10px;
     }
+
+    .livers-name{
+        font-size: 22.5px;
+    }
+
+.alice2{
+    border: solid 3px #EA5555;
+
+}
+.nancy2{
+    border: solid 3px #A817FB;
+
+}
+.mat2{
+    border: solid 3px #F0C83B;
+
+}
+.oscar2{
+    border: solid 3px #E16A6E;
+
+}
+.nataly2{
+    border: solid 3px #ED61F6;
+
+}
+.zach2{
+    border: solid 3px #52F1BF;
+
+}
+.john2{
+    border: solid 3px #55B0EA;
+
+}
+.simona2{
+    border: solid 3px #FFB017;
+
+}
+
 
 
 }
