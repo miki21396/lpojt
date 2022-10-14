@@ -114,9 +114,15 @@
 .petlivers {
   background-color: black;
 }
-.petlivers img {
-  max-width: 100%;
-  max-height: auto;
+.petlivers .petlivers2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  width: 79%;
+  margin: 0 auto;
+}
+.petlivers ::after .wrap {
+  white-space: pre;
 }
 .petlivers .title {
   justify-content: center;
@@ -125,11 +131,84 @@
   margin-top: 30px;
 }
 .petlivers .livers-minioya {
-  height: auto;
-  background-color: lightblue;
+  width: 23%;
+  background-color: white;
+  padding: 1.5em 1em;
+  margin: 2em 5px;
 }
 .petlivers .liver {
   font-size: 10px;
+}
+.petlivers .livers-name {
+  font-size: 22.5px;
+}
+.petlivers .alice2 {
+  border: solid 3px #EA5555;
+}
+.petlivers .nancy2 {
+  border: solid 3px #A817FB;
+}
+.petlivers .mat2 {
+  border: solid 3px #F0C83B;
+}
+.petlivers .oscar2 {
+  border: solid 3px #E16A6E;
+}
+.petlivers .nataly2 {
+  border: solid 3px #ED61F6;
+}
+.petlivers .zach2 {
+  border: solid 3px #52F1BF;
+}
+.petlivers .john2 {
+  border: solid 3px #55B0EA;
+}
+.petlivers .simona2 {
+  border: solid 3px #FFB017;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.service .service-title {
+  font-size: 18px;
+}
+.service .service-text {
+  font-size: 16px;
+}
+.service img {
+  width: 80px;
+  height: 80px;
+}
+.service .service-left {
+  width: 20%;
+  height: 90%;
+  border: 2px solid;
+  border-color: #9067E9;
+  box-shadow: 7px 8px 2px #9067E9;
+  margin-right: 30px;
+  padding: 30px;
+}
+.service .service-middle {
+  width: 20%;
+  height: 90%;
+  border: 2px solid;
+  border-color: #9067E9;
+  box-shadow: 7px 8px 2px #9067E9;
+  margin-right: 30px;
+  padding: 30px;
+}
+.service .service-right {
+  width: 20%;
+  height: 86%;
+  border: 2px solid;
+  border-color: #9067E9;
+  box-shadow: 7px 8px 2px #9067E9;
+  margin-right: 30px;
+  padding: 30px;
 }
 
 p {
