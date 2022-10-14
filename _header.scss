@@ -1,0 +1,47 @@
+.header-li{
+    display: flex;
+    justify-content: end;
+    font-size: 21px;
+    
+    
+    li{
+        margin-right: 40px;
+    }
+   
+}
+
+.kv{
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    .kv-center{
+        .p1{
+            font-size: 29px;
+        }
+        .p-title{
+            font-size: 63px;
+        }
+        .p2{
+            font-size: 24px;
+        }
+
+    }
+
+
+    .kv-right{
+        
+        margin-left: 60px;
+
+        .kv-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 30;
+
+        }
+    }
+}
+
+
+

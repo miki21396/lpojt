@@ -1,3 +1,36 @@
+.header-li {
+  display: flex;
+  justify-content: end;
+  font-size: 21px;
+}
+.header-li li {
+  margin-right: 40px;
+}
+
+.kv {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.kv .kv-center .p1 {
+  font-size: 29px;
+}
+.kv .kv-center .p-title {
+  font-size: 63px;
+}
+.kv .kv-center .p2 {
+  font-size: 24px;
+}
+.kv .kv-right {
+  margin-left: 60px;
+}
+.kv .kv-right .kv-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
 .petlivers {
   background-color: black;
   position: relative;
