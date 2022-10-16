@@ -10,11 +10,6 @@
     width: 79%;
     margin: 0 auto;
 
-    // .about-main-img {
-    //     width: 43%;
-    //     height: auto;
-    //     }
-
     .about-title1 {
         font-size: 20px;
         margin: 30px;
@@ -28,7 +23,6 @@
     .about-explain {
         font-size: 18px;
         margin: 30px;
-        // width: 67%;
     }
 
 
@@ -45,7 +39,6 @@
     }
 
     .about1 {
-
         flex-direction: row-reverse;
 
         .about-main-img {
@@ -113,13 +106,32 @@
     }
 }
 
-.sponser{
-flex-direction: column;
-display: flex;
-.sponser-text{
-    font-size: 20px;
+.sponser {
+    max-width: 1170px;
+    width: 79%;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+
+    .sponser1,
+    .sponser2 {
+        margin: 20px;
+    }
+
+    .sponser1 {
+        width: 90%;
+    }
+
+    .sponser2 {
+        width: 49%;
+    }
+
+    .sponser-text {
+        font-size: 20px;
+    }
+
 }
-}
+
 
 @media screen and (max-width:767px) {
 
@@ -166,8 +178,11 @@ display: flex;
             }
 
         }
+    }
 
-
-
+    .sponser {
+        .sponser-text {
+            display: none;
+        }
     }
 }
