@@ -82,6 +82,29 @@
   top: 960px;
 }
 
+.sponser {
+  max-width: 1170px;
+  width: 79%;
+  margin: 0 auto;
+  text-align: center;
+}
+.sponser .sponser-img {
+  flex-direction: column;
+}
+.sponser .sponser1,
+.sponser .sponser2 {
+  margin: 20px;
+}
+.sponser .sponser1 {
+  width: 90%;
+}
+.sponser .sponser2 {
+  width: 49%;
+}
+.sponser .sponser-text {
+  font-size: 20px;
+}
+
 @media screen and (max-width: 767px) {
   .about .about-decoimg {
     display: none;
@@ -113,6 +136,9 @@
   .about .about-texts .about-explain {
     margin: 10px;
     font-size: 15px;
+  }
+  .sponser .sponser-text {
+    display: none;
   }
 }
 .title {
