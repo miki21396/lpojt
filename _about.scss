@@ -16,7 +16,7 @@
     //     }
 
     .about-title1 {
-        font-size: 25px;
+        font-size: 20px;
         margin: 30px;
     }
 
@@ -45,9 +45,13 @@
     }
 
     .about1 {
+
+        flex-direction: row-reverse;
+
         .about-main-img {
             box-shadow: 13px 9px 0px 0px #F9C83B;
         }
+
     }
 
     .about2 {
@@ -92,7 +96,6 @@
             right: -13.5%;
             top: 330px;
             z-index: 1;
-            // 途中
         }
 
         .five {
@@ -111,4 +114,56 @@
     }
 
 
+}
+
+
+@media screen and (max-width:767px) {
+
+    .about {
+        .about-decoimg {
+            display: none;
+        }
+
+
+        .about1,
+        .about2 {
+            flex-direction: column;
+        }
+
+        .about1 {
+            flex-direction: column;
+        }
+
+        .about-img {
+            width: auto;
+            text-align: center;
+
+            .about-main-img {
+                width: 80%;
+            }
+        }
+
+
+        .about-texts {
+            background-image: url(./img/bg_01.png);
+            width: 83vw;
+            border: solid 1px black;
+            margin: 20px;
+
+            // margin: none;
+            .about-title1 {
+                margin: 10px;
+                font-size: 17px;
+            }
+
+            .about-explain {
+                margin: 10px;
+                font-size: 15px;
+            }
+
+        }
+
+
+
+    }
 }

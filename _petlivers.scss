@@ -6,29 +6,24 @@
     background-color: black;
 
 
-.petlivers2{
-    display: flex;
-    flex-wrap: wrap;
+    .petlivers2 {
+        display: flex;
+        flex-wrap: wrap;
 
-    max-width: 1170px;
-    width: 79%;
-    margin: 0 auto;
-}
-    ::after .wrap{
+        max-width: 1170px;
+        width: 79%;
+        margin: 0 auto;
+    }
+
+    ::after .wrap {
         white-space: pre;
     }
 
-    img {
-        // width: 32.64%;
-        // height: 0.4858%;
-        // max-width: 100%;
-        // max-height: auto;
-    }
 
     .title {
         justify-content: center;
         text-align: center;
-        font-size: 25px;
+        font-size: 30px;
         margin-top: 30px;
     }
 
@@ -40,50 +35,79 @@
         padding: 1.5em 1em;
         margin: 2em 5px;
         // border: solid 3px #000000;
-        
+
     }
 
-    .liver {
-        font-size: 10px;
+    .liver,
+    .liver-text {
+        font-size: 16px;
     }
 
-    .livers-name{
-        font-size: 22.5px;
+    .livers-name {
+        font-size: 24px;
     }
 
-.alice2{
-    border: solid 3px #EA5555;
+    .alice2 {
+        border: solid 3px #EA5555;
+
+    }
+
+    .nancy2 {
+        border: solid 3px #A817FB;
+
+    }
+
+    .mat2 {
+        border: solid 3px #F0C83B;
+
+    }
+
+    .oscar2 {
+        border: solid 3px #E16A6E;
+
+    }
+
+    .nataly2 {
+        border: solid 3px #ED61F6;
+
+    }
+
+    .zach2 {
+        border: solid 3px #52F1BF;
+
+    }
+
+    .john2 {
+        border: solid 3px #55B0EA;
+
+    }
+
+    .simona2 {
+        border: solid 3px #FFB017;
+
+    }
+
+
 
 }
-.nancy2{
-    border: solid 3px #A817FB;
 
-}
-.mat2{
-    border: solid 3px #F0C83B;
+@media screen and (max-width:767px) {
 
-}
-.oscar2{
-    border: solid 3px #E16A6E;
-
-}
-.nataly2{
-    border: solid 3px #ED61F6;
-
-}
-.zach2{
-    border: solid 3px #52F1BF;
-
-}
-.john2{
-    border: solid 3px #55B0EA;
-
-}
-.simona2{
-    border: solid 3px #FFB017;
-
-}
+    .petlivers {
+        width: auto;
 
 
+        // width効かない治してない
 
+
+        .petlivers2 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .livers-minioya {
+            width: auto;
+
+        }
+    }
 }

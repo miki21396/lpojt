@@ -1,48 +1,120 @@
+.title {
+  margin-top: 30px;
+}
+
 .about {
   max-width: 1170px;
   width: 79%;
   margin: 0 auto;
 }
-.about .about-main-img {
-  width: 250px;
-}
 .about .about-title1 {
-  font-size: 25px;
-  margin: 30px;
-}
-.about .about-explain {
   font-size: 20px;
   margin: 30px;
-  width: 600px;
+}
+.about .about-texts {
+  width: 67%;
+  align-items: center;
+}
+.about .about-explain {
+  font-size: 18px;
+  margin: 30px;
 }
 .about .about1,
 .about .about2 {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 .about .about-img {
   position: relative;
-  width: 270px;
-  height: 370px;
+  width: 43%;
+  height: auto;
 }
-.about .about-shadow1,
-.about .about-shadow2 {
-  width: 250px;
-  height: 360px;
+.about .about1 {
+  flex-direction: row-reverse;
+}
+.about .about1 .about-main-img {
+  box-shadow: 13px 9px 0px 0px #F9C83B;
+}
+.about .about2 .about-main-img {
+  box-shadow: -13px 9px 0px 0px #FFF835;
+}
+.about .about-decoimg {
+  position: relative;
+}
+.about .about-decoimg .one,
+.about .about-decoimg .two,
+.about .about-decoimg .three,
+.about .about-decoimg .four,
+.about .about-decoimg .five,
+.about .about-decoimg .six {
   position: absolute;
-  z-index: -1;
 }
-.about .about-shadow1 {
-  background-color: #F9C83B;
-  right: 0px;
-  top: 0px;
+.about .about-decoimg .one {
+  width: 15%;
+  left: -13.3%;
+  top: 130px;
 }
-.about .about-shadow2 {
-  background-color: #FFF835;
-  left: -10px;
-  top: 0px;
+.about .about-decoimg .two {
+  width: 10%;
+  right: -12%;
+  top: 20px;
+}
+.about .about-decoimg .three {
+  width: 12.5%;
+  left: -13.5%;
+  top: 450px;
+}
+.about .about-decoimg .four {
+  width: 22.5%;
+  right: -13.5%;
+  top: 330px;
+  z-index: 1;
+}
+.about .about-decoimg .five {
+  width: 16.5%;
+  left: -13.3%;
+  top: 760px;
+  z-index: 1;
+}
+.about .about-decoimg .six {
+  width: 7%;
+  right: -3%;
+  top: 960px;
 }
 
+@media screen and (max-width: 767px) {
+  .about .about-decoimg {
+    display: none;
+  }
+  .about .about1,
+.about .about2 {
+    flex-direction: column;
+  }
+  .about .about1 {
+    flex-direction: column;
+  }
+  .about .about-img {
+    width: auto;
+    text-align: center;
+  }
+  .about .about-img .about-main-img {
+    width: 80%;
+  }
+  .about .about-texts {
+    background-image: url(./img/bg_01.png);
+    width: 83vw;
+    border: solid 1px black;
+    margin: 20px;
+  }
+  .about .about-texts .about-title1 {
+    margin: 10px;
+    font-size: 17px;
+  }
+  .about .about-texts .about-explain {
+    margin: 10px;
+    font-size: 15px;
+  }
+}
 .title {
   font-size: 40px;
   text-align: center;
@@ -53,19 +125,26 @@
 .company {
   display: flex;
   justify-content: center;
-  font-family: "ABeeZee";
   margin-top: 30px;
   margin-bottom: 70px;
-  justify-content: space-evenly;
+}
+.company .company-left {
+  margin-right: 70px;
+  padding: 40px;
 }
 .company .company-title {
-  font-size: 48px;
+  font-size: 40px;
 }
 .company .details {
-  font-size: 25px;
+  font-size: 18px;
 }
 .company .company-info {
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.googlemap {
+  width: 400px;
+  height: 400px;
 }
 
 .footer {
@@ -78,6 +157,36 @@
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 25px;
+  }
+  .company {
+    flex-direction: column;
+    align-items: center;
+  }
+  .company .company-left {
+    margin-right: 0px;
+    padding: none;
+  }
+  .company .company-title {
+    font-size: 24px;
+  }
+  .company .details {
+    font-size: 20px;
+  }
+  .company .company-info {
+    font-size: 15px;
+  }
+  .googlemap {
+    max-width: fit-content;
+    width: 85vw;
+    height: 230px;
+  }
+  .footer {
+    font-size: 20px;
+  }
+}
 .header-li {
   display: flex;
   justify-content: end;
@@ -127,7 +236,7 @@
 .petlivers .title {
   justify-content: center;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   margin-top: 30px;
 }
 .petlivers .livers-minioya {
@@ -136,11 +245,12 @@
   padding: 1.5em 1em;
   margin: 2em 5px;
 }
-.petlivers .liver {
-  font-size: 10px;
+.petlivers .liver,
+.petlivers .liver-text {
+  font-size: 16px;
 }
 .petlivers .livers-name {
-  font-size: 22.5px;
+  font-size: 24px;
 }
 .petlivers .alice2 {
   border: solid 3px #EA5555;
@@ -167,6 +277,18 @@
   border: solid 3px #FFB017;
 }
 
+@media screen and (max-width: 767px) {
+  .petlivers {
+    width: auto;
+  }
+  .petlivers .petlivers2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .petlivers .livers-minioya {
+    width: auto;
+  }
+}
 .service {
   display: flex;
   justify-content: center;
