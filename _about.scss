@@ -110,8 +110,11 @@
     max-width: 1170px;
     width: 79%;
     margin: 0 auto;
-    flex-direction: column;
     text-align: center;
+
+    .sponser-img {
+        flex-direction: column;
+    }
 
     .sponser1,
     .sponser2 {
