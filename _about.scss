@@ -110,12 +110,16 @@
             right: -3%;
             top: 960px;
         }
-
     }
-
-
 }
 
+.sponser{
+flex-direction: column;
+display: flex;
+.sponser-text{
+    font-size: 20px;
+}
+}
 
 @media screen and (max-width:767px) {
 
