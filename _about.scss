@@ -106,6 +106,8 @@
     }
 }
 
+// SPONSER
+
 .sponser {
     max-width: 1170px;
     width: 79%;
@@ -149,10 +151,6 @@
             flex-direction: column;
         }
 
-        .about1 {
-            flex-direction: column;
-        }
-
         .about-img {
             width: auto;
             text-align: center;
@@ -161,7 +159,6 @@
                 width: 80%;
             }
         }
-
 
         .about-texts {
             background-image: url(./img/bg_01.png);
