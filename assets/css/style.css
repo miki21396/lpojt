@@ -210,6 +210,53 @@
     font-size: 20px;
   }
 }
+.contact {
+  display: flex;
+  max-width: 1170px;
+  height: 400px;
+  margin: 10 auto;
+  justify-content: center;
+}
+.contact .client {
+  height: 100%;
+  padding: 0 40px;
+  border-right: 2px solid black;
+}
+.contact .contact-title {
+  font-size: 25px;
+  background: linear-gradient(transparent 75%, #ffff7f 75%);
+}
+.contact input {
+  width: 95%;
+  border: solid 1px black;
+}
+.contact textarea {
+  width: 95%;
+  height: 40%;
+  border: solid 1px black;
+}
+.contact button {
+  background-color: black;
+  color: white;
+  width: 95%;
+  text-align: center;
+}
+.contact .liver {
+  width: 35%;
+  margin-left: 30px;
+}
+.contact .liver .liver-title {
+  font-size: 25px;
+  background: linear-gradient(transparent 75%, green 75%);
+  width: 30%;
+}
+.contact .liver .whatup {
+  max-width: 40%;
+}
+.contact .liver .arrow {
+  max-width: 12%;
+}
+
 .title {
   margin: 30px;
 }
@@ -305,13 +352,16 @@
 .header-li {
   display: flex;
   justify-content: end;
-  font-size: 21px;
+  font-size: 22px;
 }
 .header-li li {
   margin-right: 40px;
 }
 
 .kv {
+  max-width: 1170px;
+  width: 79%;
+  margin: 0 auto;
   display: flex;
   position: relative;
   align-items: center;
