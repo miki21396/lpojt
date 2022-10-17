@@ -2,16 +2,15 @@
 .contact {
     display: flex;
     max-width: 1170px;
-    height: 400px;
-    margin: 10 auto;
+    // height: 500px;
+    margin: 0 auto;
     justify-content: center;
 
 
     .client {
-        height: 100%;
         padding: 0 40px;
         border-right: 2px solid black;
-
+        width: 50%;
     }
 
     .contact-title {
@@ -19,6 +18,9 @@
         background: linear-gradient(transparent 75%, #ffff7f 75%);
     }
 
+    .contact-text {
+        margin: 30px auto;
+    }
 
     input {
         width: 95%;
@@ -37,18 +39,18 @@
         color: white;
         width: 95%;
         text-align: center;
+        padding: 18px;
     }
 
 
 
     .liver {
-        width: 35%;
+        width: 50%;
         margin-left: 30px;
 
         .liver-title {
             font-size: 25px;
             background: linear-gradient(transparent 75%, green 75%);
-            width: 30%;
         }
 
         .whatup {
@@ -62,3 +64,30 @@
 
 }
 
+
+// RESPONSIVE
+
+@media screen and (max-width:767px) {
+
+    .contact {
+        display: block;
+
+        .client,
+        .liver {
+            width: auto;
+        }
+
+        .liver {
+            margin: 0 auto;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            .arrow {
+                transform: rotate(90deg);
+            }
+
+        }
+
+    }
+}
