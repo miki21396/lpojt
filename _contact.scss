@@ -2,9 +2,9 @@
 .contact {
     display: flex;
     max-width: 1170px;
-    // height: 500px;
     margin: 0 auto;
-    justify-content: center;
+    height: 620px;
+    // justify-content: center;
 
 
     .client {
@@ -16,6 +16,7 @@
     .contact-title {
         font-size: 25px;
         background: linear-gradient(transparent 75%, #ffff7f 75%);
+        display: inline-block
     }
 
     .contact-text {
@@ -31,7 +32,6 @@
         width: 95%;
         height: 40%;
         border: solid 1px black;
-
     }
 
     button {
@@ -51,6 +51,7 @@
         .liver-title {
             font-size: 25px;
             background: linear-gradient(transparent 75%, green 75%);
+            display: inline-block
         }
 
         .whatup {
@@ -71,10 +72,33 @@
 
     .contact {
         display: block;
+        height: auto;
+
+        .contact-title {
+            text-align: center;
+            justify-content: center;
+            margin-left: 30%;
+            //not good idea
+        }
+
+        button {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        textarea {
+            height: 200px;
+        }
 
         .client,
         .liver {
             width: auto;
+        }
+
+
+        .client {
+            border-right: none;
+            border-bottom: 2px solid black;
         }
 
         .liver {
@@ -82,6 +106,7 @@
             align-items: center;
             display: flex;
             flex-direction: column;
+            margin-top: 20px;
 
             .arrow {
                 transform: rotate(90deg);
