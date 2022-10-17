@@ -546,13 +546,19 @@
     text-align: center;
   }
   .kv .kv-center .p1 {
+    top: 255px;
+    left: 130px;
     font-size: 4vw;
   }
   .kv .kv-center .p-title {
+    top: 365px;
+    left: 130px;
     font-size: 8.6vw;
   }
   .kv .kv-center .p2 {
     font-size: 3.7vw;
+    left: 130px;
+    top: 440px;
   }
   .kv .kv-right {
     display: flex;
@@ -580,7 +586,7 @@
   .kv .kv-sp {
     display: block;
     position: absolute;
-    top: 50;
+    top: 220px;
     left: 0;
     z-index: 1;
   }
