@@ -121,10 +121,10 @@
     width: 80%;
   }
   .about .about-texts {
-    background-image: url(./img/bg_01.png);
+    background-image: url(../../img/bg_01.png);
     width: 83vw;
-    border: solid 1px black;
     margin: 20px;
+    padding: 20px;
   }
   .about .about-texts .about-title1 {
     margin: 10px;
@@ -213,18 +213,21 @@
 .contact {
   display: flex;
   max-width: 1170px;
-  height: 400px;
-  margin: 10 auto;
-  justify-content: center;
+  margin: 0 auto;
+  height: 620px;
 }
 .contact .client {
-  height: 100%;
   padding: 0 40px;
   border-right: 2px solid black;
+  width: 50%;
 }
 .contact .contact-title {
   font-size: 25px;
   background: linear-gradient(transparent 75%, #ffff7f 75%);
+  display: inline-block;
+}
+.contact .contact-text {
+  margin: 30px auto;
 }
 .contact input {
   width: 95%;
@@ -240,15 +243,16 @@
   color: white;
   width: 95%;
   text-align: center;
+  padding: 18px;
 }
 .contact .liver {
-  width: 35%;
+  width: 50%;
   margin-left: 30px;
 }
 .contact .liver .liver-title {
   font-size: 25px;
   background: linear-gradient(transparent 75%, green 75%);
-  width: 30%;
+  display: inline-block;
 }
 .contact .liver .whatup {
   max-width: 40%;
@@ -257,6 +261,42 @@
   max-width: 12%;
 }
 
+@media screen and (max-width: 767px) {
+  .contact {
+    display: block;
+    height: auto;
+  }
+  .contact .contact-title {
+    text-align: center;
+    justify-content: center;
+    margin-left: 30%;
+  }
+  .contact button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .contact textarea {
+    height: 200px;
+  }
+  .contact .client,
+.contact .liver {
+    width: auto;
+  }
+  .contact .client {
+    border-right: none;
+    border-bottom: 2px solid black;
+  }
+  .contact .liver {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .contact .liver .arrow {
+    transform: rotate(90deg);
+  }
+}
 .title {
   margin: 30px;
 }
@@ -331,11 +371,10 @@
     width: 70%;
   }
   .customer-voice .cv-right {
-    background-image: url(./img/bg_02.png);
+    background-image: url(../../img/bg_02.png);
     width: 83vw;
-    border: solid 1px black;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
   }
   .customer-voice .cv-right .cv-name {
     font-size: 16px;
