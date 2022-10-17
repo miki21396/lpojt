@@ -400,7 +400,7 @@
 .kv .kv-right {
   width: 24.3%;
 }
-.kv .kv-right .kv-img {
+.kv .kv-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -418,14 +418,6 @@
   .kv .kv-left {
     display: flex;
     flex-direction: row-reverse;
-  }
-  .kv .kv-left .kv1 {
-    width: 20%;
-    height: 90px;
-  }
-  .kv .kv-left .kv2 {
-    width: 320px;
-    height: 90px;
   }
   .kv .kv-center .p1 {
     font-size: 4vw;
