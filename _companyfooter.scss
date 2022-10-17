@@ -92,3 +92,16 @@
 
 
 }
+
+
+.fadein7 {
+    transition: all 1s ease;
+    opacity: 1;
+
+}
+
+.fadein7.hide7 {
+
+    opacity: 0;
+    transform: translateY(100px);
+}

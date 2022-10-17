@@ -71,3 +71,16 @@
         }
 
     }}
+
+//    スクロール
+
+    .fadein {
+        transition: all 1s ease;
+        opacity: 1;
+
+         }
+      .fadein.hide { 
+
+        opacity: 0;
+        transform: translateY(100px);
+        }

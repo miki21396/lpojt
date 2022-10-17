@@ -116,3 +116,17 @@
 
     }
 }
+
+
+//    スクロール
+
+.fadein6 {
+    transition: all 1s ease;
+    opacity: 1;
+
+     }
+  .fadein6.hide6 { 
+
+    opacity: 0;
+    transform: translateY(100px);
+    }

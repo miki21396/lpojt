@@ -1,91 +1,192 @@
-
 // ナナ
-.header-li{
+.header-li {
     display: flex;
     justify-content: end;
     font-size: 22px;
-    
-    
-    li{
+
+
+    li {
         margin-right: 40px;
     }
-   
+
 }
 
-.kv{
+.kv {
     width: 89%;
     margin: 0 auto;
     display: flex;
     position: relative;
     align-items: center;
 
-    .kv-left{
+    .kv-left {
         width: 24.3%;
+
+        .sp1,
+        .sp2 {
+            display: none;
+        }
     }
 
-    .kv-center{
-        .p1{
+    .kv-center {
+      margin: 0 70px;
+        width: 40.4%;
+
+        .p1 {
+            position: absolute;
             font-size: 29px;
+            top: 135px;
+            z-index: 2;
         }
-        .p-title{
+
+        .p-title {
+            position: absolute;
+            top: 270px;
+           
             font-size: 63px;
+            z-index: 2;
         }
-        .p2{
+
+        .p2 {
+            position: absolute;
+            top: 370px;
             font-size: 24px;
+            z-index: 2;
+           
         }
 
     }
 
 
-    .kv-right{
+    .kv-right {
         width: 24.3%;
+
+        .sp3,
+        .sp4 {
+            display: none;
+        }
+
     }
 
-    .kv-img{
+    .kv-img {
+      width: 100%;
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 30;
+        z-index: 1;
+    }
+
+    .kv-sp {
+        display: none;
     }
 }
 
 
-@media screen and (max-width:767px){
-    .header-li{
+@media screen and (max-width:767px) {
+    .header-li {
         display: block;
         display: none;
     }
-  
 
-    .kv{
-        display: block;
-        
-        .kv-left{
+
+    .kv {
+        width: 102%;
+        height: 800px;
+        flex-direction: column;
+        position: relative;
+
+
+        .kv-left {
             display: flex;
-            flex-direction: row-reverse;
-            
+            width: 100%;
+            height: 230px;
+
+            .kv1,
+            .kv2 {
+                display: none;
+
+            }
+
+            .sp1,
+            .sp2 {
+                display: block;
+
+
+            }
+
+            .sp1 {
+                width: 40%;
+            }
+
+            .sp2 {
+                width: 60%;
+            }
+
+
+
+        }
+
+        .kv-center {
+            height: 340px;
+            text-align: center;
+
+
+            .p1 {
+                font-size: 4vw;
+            }
+
+            .p-title {
+                font-size: 8.6vw;
+            }
+
+            .p2 {
+                font-size: 3.7vw;
+            }
+        }
+
+        .kv-right {
+            display: flex;
+            width: 100%;
+            height: 230px;
+
+            .kv3,
+            .kv4 {
+                display: none;
+            }
+
+            .sp3,
+            .sp4 {
+                display: block;
+                width: 100%;
+
+            }
+
+            .sp3 {
+                width: 60%;
+            }
+
+            .sp4 {
+                width: 40%;
+            }
+
+        }
+
+        .kv-img {
+            display: none;
+        }
+
+        .kv-sp {
+            display: block;
+            position: absolute;
+            top: 50;
+            left: 0;
+            z-index: 1;
+
+        }
+
+
+
 
     }
-
-    .kv-center{
-        .p1{
-            font-size: 4vw;
-        }
-        .p-title{
-            font-size: 8.6vw;
-        }
-        .p2{
-            font-size: 3.7vw;
-        }
-    }
-    
-    .kv-right{
-        display: flex;
-        flex-direction: row-reverse;
-      
-    }
-
 
 }
 
-}
