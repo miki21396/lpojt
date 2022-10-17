@@ -379,12 +379,14 @@
 }
 
 .kv {
-  max-width: 1170px;
-  width: 79%;
+  width: 89%;
   margin: 0 auto;
   display: flex;
   position: relative;
   align-items: center;
+}
+.kv .kv-left {
+  width: 24.3%;
 }
 .kv .kv-center .p1 {
   font-size: 29px;
@@ -396,7 +398,7 @@
   font-size: 24px;
 }
 .kv .kv-right {
-  margin-left: 60px;
+  width: 24.3%;
 }
 .kv .kv-right .kv-img {
   position: absolute;
@@ -405,6 +407,40 @@
   z-index: 30;
 }
 
+@media screen and (max-width: 767px) {
+  .header-li {
+    display: block;
+    display: none;
+  }
+  .kv {
+    display: block;
+  }
+  .kv .kv-left {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .kv .kv-left .kv1 {
+    width: 20%;
+    height: 90px;
+  }
+  .kv .kv-left .kv2 {
+    width: 320px;
+    height: 90px;
+  }
+  .kv .kv-center .p1 {
+    font-size: 4vw;
+  }
+  .kv .kv-center .p-title {
+    font-size: 8.6vw;
+  }
+  .kv .kv-center .p2 {
+    font-size: 3.7vw;
+  }
+  .kv .kv-right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 .petlivers {
   background-color: black;
 }
@@ -518,6 +554,17 @@
   padding: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .service {
+    display: block;
+  }
+  .service .service-left,
+.service .service-middle,
+.service .service-right {
+    width: auto;
+    margin: 20px 80px;
+  }
+}
 p {
   font-size: 16px;
 }

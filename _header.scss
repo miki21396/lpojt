@@ -13,12 +13,15 @@
 }
 
 .kv{
-    max-width: 1170px;
-    width: 79%;
+    width: 89%;
     margin: 0 auto;
     display: flex;
     position: relative;
     align-items: center;
+
+    .kv-left{
+        width: 24.3%;
+    }
 
     .kv-center{
         .p1{
@@ -35,8 +38,7 @@
 
 
     .kv-right{
-        
-        margin-left: 60px;
+        width: 24.3%;
 
         .kv-img{
             position: absolute;
@@ -49,4 +51,50 @@
 }
 
 
+@media screen and (max-width:767px){
+    .header-li{
+        display: block;
+        display: none;
+    }
+  
 
+    .kv{
+        display: block;
+        
+        .kv-left{
+            display: flex;
+            flex-direction: row-reverse;
+            
+            .kv1{
+                width: 20%;
+                height: 90px;
+            }
+            .kv2{
+                width: 320px;
+                height: 90px;
+            }
+
+    }
+
+    .kv-center{
+        .p1{
+            font-size: 4vw;
+        }
+        .p-title{
+            font-size: 8.6vw;
+        }
+        .p2{
+            font-size: 3.7vw;
+        }
+    }
+    
+    .kv-right{
+        display: flex;
+        flex-direction: row-reverse;
+      
+    }
+
+
+}
+
+}
