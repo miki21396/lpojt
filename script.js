@@ -1,4 +1,5 @@
 $(function () {
+
 // pet livers
 $(window).on('scroll', function () {
     // 要素の画面最上部からの距離を取得
@@ -128,6 +129,12 @@ $(window).on('scroll', function () {
         }
 
     })
-
-
 })
+
+
+// hamburger menu
+$(function(){
+    $('.menu-btn').on('click', function(){
+      $('.header-li').toggleClass('is-active');
+    });
+  }());
