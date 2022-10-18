@@ -479,6 +479,8 @@
 .kv .kv-center {
   z-index: 1;
   padding: 0 30px;
+  width: 54%;
+  text-align: center;
 }
 .kv .kv-center .p1 {
   font-size: 29px;
