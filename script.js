@@ -17,14 +17,26 @@ $(window).on('scroll', function () {
 
 })
 
-// about1
+// about1 下から
+
+// $(window).on('scroll', function () {
+        
+//     let about = $('.fadein2').offset().top;
+
+//     let wh = $(window).height();
+//     about=about + 350;
+//     if (about <= $(window).scrollTop() + wh) {
+//         $('.fadein2').removeClass('hide2');
+//     } else {
+//         $('.fadein2').addClass('hide2');
+//     }
+
+// })
 
 $(window).on('scroll', function () {
-        
     let about = $('.fadein2').offset().top;
-
     let wh = $(window).height();
-    about=about + 350;
+    // $(window).scrollTop()は現在のスクロール位置
     if (about <= $(window).scrollTop() + wh) {
         $('.fadein2').removeClass('hide2');
     } else {
@@ -33,14 +45,26 @@ $(window).on('scroll', function () {
 
 })
 
-// about2
-$(window).on('scroll', function () {
+// about2　下から
+// $(window).on('scroll', function () {
         
-    let about2 = $('.fadein3').offset().top;
+//     let about2 = $('.fadein3').offset().top;
 
-    let wh = $(window).height();
-    about2= about2 + 350;
-    if (about2 <= $(window).scrollTop() + wh) {
+//     let wh = $(window).height();
+//     about2= about2 + 350;
+//     if (about2 <= $(window).scrollTop() + wh) {
+//         $('.fadein3').removeClass('hide3');
+//     } else {
+//         $('.fadein3').addClass('hide3');
+//     }
+
+// })
+
+$(window).on('scroll', function () {
+    let about2 = $('.fadein3').offset().top;
+    let wh2 = $(window).height();
+
+    if (about2 <= $(window).scrollTop() + wh2) {
         $('.fadein3').removeClass('hide3');
     } else {
         $('.fadein3').addClass('hide3');

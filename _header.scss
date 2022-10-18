@@ -28,29 +28,27 @@
     }
 
     .kv-center {
-        margin: 0 70px;
-        width: 40.4%;
+        z-index: 1;
+        padding: 0 30px;
 
         .p1 {
-            position: absolute;
             font-size: 29px;
-            top: 135px;
-            z-index: 2;
+         
         }
 
         .p-title {
-            position: absolute;
-            top: 270px;
+           
+            
 
             font-size: 63px;
-            z-index: 2;
+         
         }
 
         .p2 {
-            position: absolute;
-            top: 370px;
+           
+        
             font-size: 24px;
-            z-index: 2;
+           
 
         }
 
@@ -72,7 +70,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 1;
+       
     }
 
     .kv-sp {
